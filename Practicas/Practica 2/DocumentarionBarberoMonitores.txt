@@ -1,0 +1,41 @@
+------------------------ OBJETOS CONDICION Y PROPÓSITOS --------------
+
+-silla: este objeto condicion tiene el propósito de “gestionar” el sueño del barbero, si la silla esta vacía, significa que el barbero no tiene trabajo y puede echarse a dormir, si la silla está ocupada se mandará al barbero la señal para que despierte y se ponga a trabajar.
+-salaEspera: este objeto condición sirve para gestionar a los clientes, cuando la silla está ocupada, el cliente irá a la sala de espera
+-barbero: este objeto condición representa el acceso, en exclusión mutua, al recurso que es como tal el barbero, servirá para gestionar cuando el barbero está pelando a una persona, ya que el barbero no puede encontrarse cortando el pelo a más de una persona simultáneamente.
+
+------------------------SALIDA DEL PROGRAMA---------------------
+
+La barberia esta abierta ahora!
+Ha llegado el cliente n.1 y ha despertado al barbero
+Ha llegado el cliente n.2
+Ha llegado el cliente n.3
+Pelando al cliente...
+Ha llegado el cliente n.4
+Cliente pelado!
+Siguiente! Ahora hay 3 sillas ocupadas.
+Pelando al cliente...
+Cliente pelado!
+Siguiente! Ahora hay 2 sillas ocupadas.
+Pelando al cliente...
+Ha llegado el cliente n.3
+Ha llegado el cliente n.4
+Cliente pelado!
+Siguiente! Ahora hay 3 sillas ocupadas.
+Pelando al cliente...
+Ha llegado el cliente n.4
+Cliente pelado!
+Siguiente! Ahora hay 3 sillas ocupadas.
+Pelando al cliente...
+Cliente pelado!
+Siguiente! Ahora hay 2 sillas ocupadas.
+Pelando al cliente...
+Cliente pelado!
+Siguiente! Ahora hay 1 sillas ocupadas.
+Pelando al cliente...
+Ha llegado el cliente n.2
+Ha llegado el cliente n.3
+Ha llegado el cliente n.4
+Cliente pelado!
+Siguiente! Ahora hay 3 sillas ocupadas.
+

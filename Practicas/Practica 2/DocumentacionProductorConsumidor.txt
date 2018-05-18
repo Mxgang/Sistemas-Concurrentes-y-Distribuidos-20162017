@@ -1,0 +1,29 @@
+-----------------------CAMBIOS SOBRE LA CLASE BUFFER Y OBJETOS CONDICION----------------------------------
+
+La principal diferencia entre la nueva clase Buffer y la anterior, es que como ahora son los monitores los que se encargan de gestionar la sincronización y el acceso en exclusión mutua, ya no es necesario que todos los métodos de la clase tengan la etiqueta “synchronized”, como el monitor sólo permite ser ejecutado por un sólo proceso, esta propiedad está garantizada. Como consecuencia de esto, no se deberán manejar posibles excepciones de interrupción, ni llamadas al método “notifyAll” para indicar que el proceso ya ha termina de ejecutar, esto es ahora gestionado por el monitor, por lo tanto solo deberemos hacer las llamadas a los método del monitor “enter()” y “leave()” para indicar a que zona del código se debe acceder en exclusión mutua.
+
+Para este programa he usado dos objetos condicion “puede_depositar” y “puede_extraer”, que al igual que los semáforos que tenían los mismos nombres en la versión con semáforos de la práctica anterior, se encarga de gestionar el acceso en exclusión mutua de los métodos encargados de depositar y extraer datos del buffer.
+
+
+
+------------------------SALIDA DEL PROGRAMA---------------------
+Consumidor 1 consumiendo 201.0
+Consumidor 2 consumiendo 101.0
+Produciendo 101.0
+Produciendo 201.0
+Consumidor 1 consumiendo 102.0
+Produciendo 102.0
+Consumidor 2 consumiendo 202.0
+Produciendo 202.0
+Produciendo 103.0
+Consumidor 2 consumiendo 203.0
+Consumidor 1 consumiendo 103.0
+Produciendo 203.0
+Produciendo 104.0
+Consumidor 1 consumiendo 204.0
+Produciendo 105.0
+Produciendo 204.0
+Consumidor 2 consumiendo 104.0
+Produciendo 205.0
+Consumidor 1 consumiendo 105.0
+Consumidor 2 consumiendo 205.0

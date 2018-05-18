@@ -1,0 +1,5 @@
+En total hay 5 semáforos, 1 para el estanquero, 3 para los fumadores y 1 auxiliar. 
+- El semáforo del estanquero que está inicializado a 1 solamente puede puede entrar en la función de estanquero para producir un ingrediente
+y poner el semáforo de los fumadores a 1.
+- Los semáforos de los fumadores están inicializados a 0, para que no puedan entrar a la función fumador a menos que se haya producido un ingrediente.
+- El semáforo auxiliar "mutex" lo he puesto en los "cout" para que no se solapasen en la ejecución del programa, con este semáforo que está inicializado a 1, lo ponemos entre cada cout y nos soluciona este problema

@@ -1,0 +1,4 @@
+Se ha utilizado 2 semáforos, uno para el productor y el otro para el consumidor.
+- El semáforo del productor está inicializado al tamaño del vector que tengo asignado, donde se bloquea si el buffer está lleno.
+- EL semáforo del consumidor está inicializado a 0, nunca podrá entrar a la función del consumidor a menos que el productor produzca un dato.
+

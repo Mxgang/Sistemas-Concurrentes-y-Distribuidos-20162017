@@ -1,0 +1,39 @@
+------------------------ OBJETOS CONDICION Y PROPÓSITOS --------------
+
+De la misma manera que en la versión con semáforos, en este programa gestionado por monitores, usaremos un variable condicion que se corresponderá a la gestión de la hebra del estanquero, que tendrá la función de poner los ingredientes sobre la mesa, avisando al fumador cuando ponga sus respectivos. Además también he usado un vector de variables condición, correspondiendo cada una de las condiciones de, gestionar los accesos al monitor para cada una de las hebras correspondientes a los fumadores, cuando reciban la señal de aviso de que se encuentran sus ingredientes en la mesa, cogiéndolos para irse a fumar, avisando al estanquero de tal acción.
+
+
+
+------------------------SALIDA DEL PROGRAMA---------------------
+El estanquero pone cerillas en la mesa
+El tercer fumador coge las cerillas y se va a fumar.
+La mesa del estanco está vacía.
+El estanquero pone papel en la mesa.
+El primer fumador coge el papel y se va a fumar
+La mesa del estanco está vacía.
+El estanquero pone papel en la mesa.
+El primer fumador termina de fumar
+El primer fumador coge el papel y se va a fumar
+La mesa del estanco está vacía.
+El tercer fumador termina de fumar
+El estanquero pone cerillas en la mesa
+El tercer fumador coge las cerillas y se va a fumar.
+La mesa del estanco está vacía.
+El estanquero pone cerillas en la mesa
+El primer fumador termina de fumar
+El tercer fumador termina de fumar
+El tercer fumador coge las cerillas y se va a fumar.
+La mesa del estanco está vacía.
+El estanquero pone tabaco en la mesa.
+El segundo fumador coge el tabaco y se va a fumar.
+La mesa del estanco está vacía.
+El estanquero pone papel en la mesa.
+El primer fumador coge el papel y se va a fumar
+La mesa del estanco está vacía.
+El estanquero pone tabaco en la mesa.
+El tercer fumador termina de fumar
+El segundo fumador termina de fumar
+El segundo fumador coge el tabaco y se va a fumar.
+La mesa del estanco está vacía.
+El estanquero pone tabaco en la mesa.
+El primer fumador termina de fumar

@@ -1,0 +1,89 @@
+/////////////////Descripción////////////////
+Primero he cambiado las iteraciones, para que concuerden los producidos con los
+consumidos, en productor he hecho un bucle de 4 (que por 5 productores serán 20)
+y en consumidor un bucle de 5 (que por 4 consumidores también será 20)
+
+Luego en buffer tengo que recorrer ese numero 2 veces (2*20)
+
+Ademas, ahora se recibirán los datos en MPI_ANY_SOURCE ya que los productores
+tendrán un ID < 5 el buffer un ID == 5 y los consumidores un ID > 5
+
+Para diferenciar de si es productor y consumidor le pasaremos un 1 o un 2 en el
+campo TAG siendo un 1 el productor y un 2 el consumidor
+
+//////////////SALIDA DEL PROGRAMA/////////////
+Productor 4 produce valor 0
+Productor 0 produce valor 0
+Productor 2 produce valor 0
+Productor 1 produce valor 0
+Buffer recibe 0 de Prod. 2
+Buffer recibe 0 de Prod. 1
+Productor 2 produce valor 1
+Productor 3 produce valor 0
+Buffer envia 0 a Cons. 8
+Consumidor 8 recibe valor 0 de Buffer 
+0
+Buffer envia 0 a Cons. 9
+Buffer recibe 0 de Prod. 0
+Consumidor 9 recibe valor 0 de Buffer 
+Buffer recibe 0 de Prod. 3
+Buffer recibe 1 de Prod. 2
+0
+Buffer recibe 0 de Prod. 4
+Productor 2 produce valor 2
+Productor 0 produce valor 1
+Productor 4 produce valor 1
+Buffer envia 0 a Cons. 8
+Consumidor 8 recibe valor 0 de Buffer 
+0
+Productor 3 produce valor 1
+Buffer envia 1 a Cons. 9
+Buffer recibe 2 de Prod. 2
+Consumidor 9 recibe valor 1 de Buffer 
+1
+Productor 2 produce valor 3
+Buffer recibe 1 de Prod. 4
+Productor 4 produce valor 2
+Buffer envia 1 a Cons. 8
+Consumidor 8 recibe valor 1 de Buffer 
+1
+Buffer envia 2 a Cons. 9
+Buffer recibe 3 de Prod. 2
+Buffer recibe 2 de Prod. 4
+Consumidor 9 recibe valor 2 de Buffer 
+1.41421
+Productor 4 produce valor 3
+Consumidor 8 recibe valor 2 de Buffer 
+1.41421
+Buffer envia 2 a Cons. 8
+Productor 1 produce valor 1
+Buffer envia 3 a Cons. 7
+Buffer envia 0 a Cons. 9
+Buffer recibe 1 de Prod. 1
+Buffer recibe 3 de Prod. 4
+Consumidor 9 recibe valor 0 de Buffer 
+0
+Buffer envia 3 a Cons. 8
+Consumidor 8 recibe valor 3 de Buffer 
+1.73205
+Buffer envia 1 a Cons. 9
+Buffer recibe 1 de Prod. 3
+Buffer recibe 1 de Prod. 0
+Consumidor 9 recibe valor 1 de Buffer 
+1
+Buffer recibe 2 de Prod. 3
+Productor 0 produce valor 2
+Productor 3 produce valor 2
+Productor 3 produce valor 3
+Buffer recibe 2 de Prod. 0
+Productor 0 produce valor 3
+Consumidor 7 recibe valor 3 de Buffer 
+1.73205
+Consumidor 7 recibe valor 2 de Buffer 
+Buffer envia 2 a Cons. 7
+Buffer recibe 3 de Prod. 0
+1.41421
+Consumidor 6 recibe valor 3 de Buffer 
+1.73205
+Buffer envia 3 a Cons. 6
+
